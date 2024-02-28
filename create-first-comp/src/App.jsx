@@ -1,19 +1,5 @@
-import Hello from "./Hello";
-import Random from "./Random";
-import KgButton from "./kgButton";
-
-function app(){
-    return <div>
-      <h1>
-        This is the best react course
-      </h1>
-        <KgButton></KgButton>
-        <Hello></Hello>
-        <Random></Random>
-        <Random></Random>
-        <Random></Random>
-        
-    </div>
+function App(){
+    return <h1>This is rithvik</h1>
 }
 
-export default app;
+export default App;

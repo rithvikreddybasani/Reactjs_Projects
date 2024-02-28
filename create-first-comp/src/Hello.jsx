@@ -4,7 +4,7 @@ function Hello(){
     return "rithvik reddy";
   }
   return <h3>
-    Hello this is the future speaking i am {fullName()}
+    Hello this is the future speaking i am {fullName( )}
   </h3>
 }
 
