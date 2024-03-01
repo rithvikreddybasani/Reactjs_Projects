@@ -1,17 +1,12 @@
 import styles from "./Item.module.css";
 
-const Item = (props) => {
-  function handleButton(event) {
-    console.log(event);
-    console.log(`${props.foodItem}`);
-  }
-
+const Item = ({ foodItem, handleBuyButton }) => {
   return (
     <li className="list-group-item rithvik">
-      {props.foodItem}{" "}
+      {foodItem}{" "}
       <button
         className={`${styles.button} btn btn-info`}
-        onClick={(event) => handleButton(event)}
+        onClick={handleBuyButton}
       >
         buy
       </button>
