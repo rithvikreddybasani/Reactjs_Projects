@@ -4,16 +4,14 @@ import FoodInput from "./Components/FoodInput";
 import { useState } from "react";
 
 function App() {
-  let [textToShow, setTextState] = useState();
-  let [foodItems, setFoodItems] = useState([
-    "Salad",
-    "Green vegetable",
-    "roti",
-  ]);
+  let [foodItems, setShow] = useState(["vegetable", "mango", "banana"]);
 
   const handleOnChange = (event) => {
-    console.log("Hello world");
-    setTextState(event.target.value);
+    if (event.key === "Enter") {
+      let newItem = event.target.value;
+      let newArray = [...foodItems, newItem];
+      setShow(newArray);
+    }
   };
 
   return (
@@ -22,7 +20,7 @@ function App() {
       <Container>
         <h1>Fragments</h1>
         <FoodInput handleOnChange={handleOnChange}></FoodInput>
-        <p>{textToShow}</p>
+
         <FoodItems items={foodItems}></FoodItems>
       </Container>
     </>
