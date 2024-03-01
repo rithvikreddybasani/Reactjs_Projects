@@ -1,13 +1,17 @@
 import FoodItems from "./Components/FoodItems";
+import Container from "./Components/Container";
+import FoodInput from "./Components/FoodInput";
 
 function App() {
   //let foodItems = [];
   let foodItems = ["dal", "vegetable", "noodles"];
   return (
     <>
-      <h1>Fragments</h1>
-      {foodItems.length === 0 ? <h3>fuct</h3> : null}
-      <FoodItems items={foodItems}></FoodItems>
+      <Container>
+        <h1>Fragments</h1>
+        <FoodInput></FoodInput>
+        <FoodItems items={foodItems}></FoodItems>
+      </Container>
     </>
   );
 }
