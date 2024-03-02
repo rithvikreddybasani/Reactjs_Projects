@@ -1,0 +1,36 @@
+.main-container {
+
+  width: 300px;
+  height: 400px;
+  margin: 100px auto;
+  border: 3px solid black;
+}
+
+.input-class {
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.input-class input {
+  height: 50px;
+  width: 80%;
+}
+
+.buttons-part {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+    column-gap: 20px;
+    grid-template-columns: 50px 50px 50px;
+    grid-template-rows: 50px 50px 50px 50px 50px;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

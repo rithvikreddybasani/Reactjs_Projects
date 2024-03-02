@@ -4,11 +4,7 @@ const FoodItems = ({ items }) => {
   return (
     <ul className="list-group">
       {items.map((item) => (
-        <Item
-          key={item}
-          foodItem={item}
-          handleBuyButton={() => console.log(`${item} is clicked`)}
-        ></Item>
+        <Item key={item} foodItem={item} isChanged={item}></Item>
       ))}
     </ul>
   );

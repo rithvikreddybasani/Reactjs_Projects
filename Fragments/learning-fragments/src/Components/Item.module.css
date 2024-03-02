@@ -1,3 +1,25 @@
+.update {
+   margin-bottom: 5px;
+}
 .button {
    float: right;
 }
+
+.change {
+      color: brown;
+}
+
+.update {
+   transition: all 1s linear 0.5s;
+   list-style: none;
+}
+
+.update:hover {
+      border: 2px solid blue;
+}
+
+
+
+
+
+
