@@ -1,7 +1,7 @@
 function Input({ result }) {
   return (
     <div className="input-class">
-      <input type="text" placeholder={result} />
+      <input type="text" value={result} />
     </div>
   );
 }

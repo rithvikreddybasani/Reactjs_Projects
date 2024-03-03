@@ -1,27 +1,35 @@
 import AppName from "./Components/AppName";
 import AddTodo from "./Components/AddTodo";
 import "./App.css";
-f;
+
 import List from "./Components/List";
+import { useState } from "react";
 
 function App() {
-  const todoItems = [
-    {
-      name: "buy milk",
-      dueData: "4/10/2023",
-    },
-    {
-      name: "Go to College",
-      dueData: "4/10/2023",
-    },
-  ];
+  let todoItems = [];
+
+  let [ItemsToDo, SetItemsToDo] = useState(todoItems);
+
+  const handleNewItem = (todoName, tododate) => {
+    let newObject = { todoName, tododate };
+    let newObjectArray = [...ItemsToDo, { name: todoName, dueDate: tododate }];
+    SetItemsToDo(newObjectArray);
+  };
+
+  const handleDeleteItem = (todoItemName) => {
+    let newObjectArrayAfterDeletion = ItemsToDo.filter((individual) => {
+      return individual.name !== todoItemName;
+    });
+    SetItemsToDo(newObjectArrayAfterDeletion);
+  };
+
   return (
     <center class="todo-container">
       <AppName></AppName>
-      <AddTodo></AddTodo>
-      <List item={todoItems}></List>
+      <AddTodo onNewItem={handleNewItem}></AddTodo>
+      <List item={ItemsToDo} onDeleteClick={handleDeleteItem}></List>
     </center>
   );
 }
-2;
+
 export default App;

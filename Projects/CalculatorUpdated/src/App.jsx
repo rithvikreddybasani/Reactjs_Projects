@@ -29,6 +29,9 @@ function App() {
     } else if (event.target.value === "C") {
       presentExp = "";
       SetPresentExp(presentExp);
+    } else {
+      presentExp += event.target.value;
+      SetPresentExp(presentExp);
     }
   };
 
