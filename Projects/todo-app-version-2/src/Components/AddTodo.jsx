@@ -1,37 +1,31 @@
-import { useState } from "react";
-
+import { useRef } from "react";
+import { MdAddBox } from "react-icons/md";
+``;
 function AddTodo({ onNewItem }) {
-  const [todoName, setTodoName] = useState();
-  const [dueDate, setDueDate] = useState();
-
-  const handleNameChange = (event) => {
-    setTodoName(event.target.value);
-  };
-
-  const handleDateChange = (event) => {
-    setDueDate(event.target.value);
-  };
+  const todoNameElement = useRef();
+  const todoDateElement = useRef();
 
   return (
     <div class="container">
       <div class="row">
         <div class="col-6">
-          <input
-            type="text"
-            placeholder="Enter the list here"
-            onChange={handleNameChange}
-          />
+          <input type="text" ref={todoNameElement} placeholder="" />
         </div>
         <div class="col-4">
-          <input type="date" onChange={handleDateChange} />
+          <input type="date" ref={todoDateElement} />
         </div>
         <div class="col-2">
           <button
-            type="button"
+            type="submit"
             className="btn btn-success"
-            onClick={() => onNewItem(todoName, dueDate)}
+            onClick={() =>
+              onNewItem(
+                todoNameElement.current.value,
+                todoDateElement.current.value
+              )
+            }
           >
-            Add
+            <MdAddBox />
           </button>
         </div>
       </div>

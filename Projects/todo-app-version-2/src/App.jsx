@@ -11,7 +11,6 @@ function App() {
   let [ItemsToDo, SetItemsToDo] = useState(todoItems);
 
   const handleNewItem = (todoName, tododate) => {
-    let newObject = { todoName, tododate };
     let newObjectArray = [...ItemsToDo, { name: todoName, dueDate: tododate }];
     SetItemsToDo(newObjectArray);
   };
@@ -27,6 +26,7 @@ function App() {
     <center class="todo-container">
       <AppName></AppName>
       <AddTodo onNewItem={handleNewItem}></AddTodo>
+      {ItemsToDo.length === 0 ? <h4>Enjoy your day</h4> : null}
       <List item={ItemsToDo} onDeleteClick={handleDeleteItem}></List>
     </center>
   );
