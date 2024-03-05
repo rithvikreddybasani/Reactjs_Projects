@@ -4,11 +4,10 @@ import "./App.css";
 
 import List from "./Components/List";
 import { useState } from "react";
+import { TodoItemsContext } from "./store/todo-items-store";
 
 function App() {
-  let todoItems = [];
-
-  let [ItemsToDo, SetItemsToDo] = useState(todoItems);
+  let [ItemsToDo, SetItemsToDo] = useState([]);
 
   const handleNewItem = (todoName, tododate) => {
     let newObjectArray = [...ItemsToDo, { name: todoName, dueDate: tododate }];
@@ -23,12 +22,20 @@ function App() {
   };
 
   return (
-    <center class="todo-container">
-      <AppName></AppName>
-      <AddTodo onNewItem={handleNewItem}></AddTodo>
-      {ItemsToDo.length === 0 ? <h4>Enjoy your day</h4> : null}
-      <List item={ItemsToDo} onDeleteClick={handleDeleteItem}></List>
-    </center>
+    <TodoItemsContext.Provider
+      value={{
+        ItemsToDo,
+        handleNewItem,
+        handleDeleteItem,
+      }}
+    >
+      <center class="todo-container">
+        <AppName></AppName>
+        <AddTodo></AddTodo>
+        {ItemsToDo.length === 0 ? <h4>Enjoy your day</h4> : null}
+        <List></List>
+      </center>
+    </TodoItemsContext.Provider>
   );
 }
 

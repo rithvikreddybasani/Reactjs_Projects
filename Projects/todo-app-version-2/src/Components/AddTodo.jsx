@@ -1,15 +1,25 @@
-import { useRef } from "react";
+import { useContext, useRef } from "react";
 import { MdAddBox } from "react-icons/md";
-``;
-function AddTodo({ onNewItem }) {
+import { TodoItemsContext } from "../store/todo-items-store";
+
+function AddTodo() {
   const todoNameElement = useRef();
   const todoDateElement = useRef();
+  const { handleNewItem } = useContext(TodoItemsContext);
+
+  const handleButtonClick = () => {
+    handleNewItem(todoNameElement.current.value, todoDateElement.current.value);
+  };
 
   return (
     <div class="container">
       <div class="row">
         <div class="col-6">
-          <input type="text" ref={todoNameElement} placeholder="" />
+          <input
+            type="text"
+            ref={todoNameElement}
+            placeholder="Enter text here"
+          />
         </div>
         <div class="col-4">
           <input type="date" ref={todoDateElement} />
@@ -18,12 +28,7 @@ function AddTodo({ onNewItem }) {
           <button
             type="submit"
             className="btn btn-success"
-            onClick={() =>
-              onNewItem(
-                todoNameElement.current.value,
-                todoDateElement.current.value
-              )
-            }
+            onClick={handleButtonClick}
           >
             <MdAddBox />
           </button>
