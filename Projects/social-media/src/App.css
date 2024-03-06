@@ -1,0 +1,26 @@
+
+
+.container-class {
+  display: flex;
+  
+}
+
+.content-class {
+  width: 100%;
+}
+
+.sidebar {
+  min-height: 800px;
+}
+
+.tagsName{
+    margin-left: 5px;
+}
+  
+.card {
+  margin: 10px;
+}
+
+.create-post {
+  width: 80%;
+}
