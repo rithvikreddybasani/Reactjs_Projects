@@ -1,25 +1,31 @@
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { PostList } from "../store/post-list-store";
 import CardItem from "./CardItem";
 import WelcomeMessage from "./WelcomeMessage";
+import LoadingSpinner from "./LoadingSpinner";
 
 const CardItems = () => {
   const { postList, addInitialPosts } = useContext(PostList);
+  const [fetching, setFetching] = useState(false);
 
-  const handleGetPostClick = () => {
+  useEffect(() => {
+    setFetching(true);
     fetch("https://dummyjson.com/posts")
       .then((res) => res.json())
-      .then((data) => addInitialPosts(data.posts));
-  };
+      .then((data) => {
+        addInitialPosts(data.posts);
+        setFetching(false);
+      });
+  }, []);
 
   return (
     <>
-      {postList.length === 0 && (
-        <WelcomeMessage onGetPostClick={handleGetPostClick} />
-      )}
-      {postList.map((post) => {
-        return <CardItem key={post.id} post={post}></CardItem>;
-      })}
+      {fetching && <LoadingSpinner />}
+      {!fetching && postList.length === 0 && <WelcomeMessage />}
+      {!fetching &&
+        postList.map((post) => {
+          return <CardItem key={post.id} post={post}></CardItem>;
+        })}
     </>
   );
 };
