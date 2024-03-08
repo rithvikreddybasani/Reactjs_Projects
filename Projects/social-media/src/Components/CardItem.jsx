@@ -6,7 +6,7 @@ const CardItem = ({ post }) => {
   const { deletePost } = useContext(PostList);
 
   return (
-    <div className="card" style={{ width: "18rem" }}>
+    <div className="card">
       <div className="card-body">
         <h5 className="card-title">
           {post.title}

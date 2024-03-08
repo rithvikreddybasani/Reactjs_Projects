@@ -3,6 +3,7 @@ import { createContext, useReducer } from "react";
 export const PostList = createContext({
   postList: [],
   addPost: () => {},
+  addInitialPosts: () => {},
   deletePost: () => {},
 });
 
@@ -23,34 +24,32 @@ const postListReducer = (currPostList, action) => {
         tags: action.payload.noHashTag,
       },
     ];
+  } else if (action.type === "ADD_INIITAL_POSTS") {
+    newPostList = action.payload.posts;
   }
   return newPostList;
 };
 
 const PostListProvider = ({ children }) => {
-  const DEFAULT_POST_LIST = [
-    {
-      id: "1",
-      title: "Going to Goa",
-      body: "Hi Friends,I am going to Goa for my vacations. Hope to enjoy a lot. Peace out..",
-      reactions: 2,
-      userId: "user-9",
-      tags: ["vacation", "Goa", "Enjoy"],
-    },
-    {
-      id: "2",
-      title: "Pass btech",
-      body: "After enjoying 4 years i finally passed..",
-      reactions: 4,
-      userId: "user-10",
-      tags: ["btech", "Graduating", "Unbelievable"],
-    },
-  ];
+  // const DEFAULT_POST_LIST = [
+  //   {
+  //     id: "1",
+  //     title: "Going to Goa",
+  //     body: "Hi Friends,I am going to Goa for my vacations. Hope to enjoy a lot. Peace out..",
+  //     reactions: 2,
+  //     userId: "user-9",
+  //     tags: ["vacation", "Goa", "Enjoy"],
+  //   },
+  //   {
+  //     id: "2",
+  //     title: "Pass btech",
+  //     body: "After enjoying 4 years i finally passed..",
+  //     reactions: 4,
+  //     userId: "user-10",
+  //     tags: ["btech", "Graduating", "Unbelievable"],
+  //   },
 
-  const [postList, dispatchPostList] = useReducer(
-    postListReducer,
-    DEFAULT_POST_LIST
-  );
+  const [postList, dispatchPostList] = useReducer(postListReducer, []);
 
   const addPost = (userId, titleName, bodyContent, noReaction, noHashTag) => {
     dispatchPostList({
@@ -61,6 +60,15 @@ const PostListProvider = ({ children }) => {
         bodyContent,
         noReaction,
         noHashTag,
+      },
+    });
+  };
+
+  const addInitialPosts = (posts) => {
+    dispatchPostList({
+      type: "ADD_INIITAL_POSTS",
+      payload: {
+        posts,
       },
     });
   };
@@ -79,6 +87,7 @@ const PostListProvider = ({ children }) => {
       value={{
         postList,
         addPost,
+        addInitialPosts,
         deletePost,
       }}
     >
