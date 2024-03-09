@@ -1,11 +1,12 @@
 import { useState } from "react";
 import "./App.css";
-import Footer from "./Components/Footer";
-import Header from "./Components/Header";
-import Sidebar from "./Components/Sidebar";
-import CardItems from "./Components/CardItems";
-import Forms from "./Components/Forms";
-import PostListProvider from "./store/post-list-store";
+import Footer from "../Components/Footer";
+import Header from "../Components/Header";
+import Sidebar from "../Components/Sidebar";
+import CardItems from "../Components/CardItems";
+import Forms from "../Components/Forms";
+import PostListProvider from "../store/post-list-store";
+import { Outlet } from "react-router-dom";
 
 function App() {
   const [sectionSelected, setsectionSelected] = useState("Home");
@@ -19,11 +20,7 @@ function App() {
         ></Sidebar>
         <center className="content-class">
           <Header></Header>
-          {sectionSelected === "Createpost" ? (
-            <Forms></Forms>
-          ) : (
-            <CardItems></CardItems>
-          )}
+          <Outlet></Outlet>
           <Footer></Footer>
         </center>
       </div>

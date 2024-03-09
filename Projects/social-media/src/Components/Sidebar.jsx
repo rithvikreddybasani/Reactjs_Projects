@@ -1,4 +1,6 @@
-const Sidebar = ({ realValue, setsectionSelected }) => {
+import { Link } from "react-router-dom";
+
+const Sidebar = () => {
   return (
     <div
       class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark sidebar"
@@ -16,30 +18,24 @@ const Sidebar = ({ realValue, setsectionSelected }) => {
       <hr></hr>
       <ul class="nav nav-pills flex-column mb-auto">
         <li class="nav-item">
-          <a
-            href="#"
-            class={`nav-link text-white ${realValue === "Home" && "active"}`}
+          <Link
+            to="/card-items"
+            class="nav-link text-white"
             aria-current="page"
-            onClick={() => setsectionSelected("Home")}
           >
             <svg class="bi pe-none me-2" width="16" height="16">
               <use xlink:href="#home"></use>
             </svg>
             Home
-          </a>
+          </Link>
         </li>
-        <li onClick={() => setsectionSelected("Createpost")}>
-          <a
-            href="#"
-            class={`nav-link text-white ${
-              realValue === "Createpost" && "active"
-            }`}
-          >
+        <li>
+          <Link to="/create-post" class="nav-link text-white">
             <svg class="bi pe-none me-2" width="16" height="16">
               <use xlink:href="#speedometer2"></use>
             </svg>
             Createpost
-          </a>
+          </Link>
         </li>
       </ul>
       <hr></hr>
