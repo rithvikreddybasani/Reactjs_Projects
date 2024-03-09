@@ -16,6 +16,10 @@ const CardItems = () => {
         addInitialPosts(data.posts);
         setFetching(false);
       });
+
+    return () => {
+      console.log("Cleaning up UseEffect  ");
+    };
   }, []);
 
   return (

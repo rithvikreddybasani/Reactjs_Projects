@@ -8,7 +8,7 @@ import Forms from "./Components/Forms";
 import PostListProvider from "./store/post-list-store";
 
 function App() {
-  const [sectionSelected, setsectionSelected] = useState();
+  const [sectionSelected, setsectionSelected] = useState("Home");
 
   return (
     <PostListProvider>
