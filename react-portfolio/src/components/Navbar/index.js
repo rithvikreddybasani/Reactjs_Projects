@@ -18,6 +18,7 @@ import { FaBars } from "react-icons/fa";
 import { Bio } from "../../data/constants";
 import { Close, CloseRounded } from "@mui/icons-material";
 import { useTheme } from "styled-components";
+import { DiClojureAlt } from "react-icons/di";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -35,7 +36,7 @@ const Navbar = () => {
               cursor: "pointer",
             }}
           >
-            <DiCssdeck size="3rem" /> <Span>Portfolio</Span>
+            <DiClojureAlt size={"3rem"} /> <Span>Portfolio</Span>
           </a>
         </NavLogo>
         <MobileIcon>

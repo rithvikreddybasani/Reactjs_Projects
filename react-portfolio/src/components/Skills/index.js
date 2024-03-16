@@ -58,6 +58,7 @@ const SkillsContainer = styled.div`
 
 const Skill = styled.div`
   width: 100%;
+  align-items: center;
   max-width: 500px;
   background: ${({ theme }) => theme.card};
   border: 0.1px solid #854ce6;
@@ -112,8 +113,8 @@ const SkillItem = styled.div`
 `;
 
 const SkillImage = styled.img`
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
 `;
 
 const Skills = () => {

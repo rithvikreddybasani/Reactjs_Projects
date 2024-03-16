@@ -24,9 +24,6 @@ const HeroSection = () => {
   return (
     <div id="about">
       <HeroContainer>
-        <HeroBg>
-          <HeroBgAnimation />
-        </HeroBg>
         <HeroInnerContainer>
           <HeroLeftContainer id="Left">
             <Title>

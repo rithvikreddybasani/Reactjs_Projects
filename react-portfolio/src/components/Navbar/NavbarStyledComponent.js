@@ -129,6 +129,7 @@ export const MobileMenu = styled.div`
   position: absolute;
   top: 80px;
   right: 0;
+
   width: 100%;
   padding: 12px 40px 24px 40px;
   background: ${({ theme }) => theme.card_light + 99};
