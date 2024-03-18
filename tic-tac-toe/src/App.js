@@ -5,7 +5,7 @@ import Second from "./components/Second";
 
 const Cards = styled.div`
   background-color: aqua;
-  display: flex;
+
   justify-content: center;
   align-items: center;
   width: 1200px;
