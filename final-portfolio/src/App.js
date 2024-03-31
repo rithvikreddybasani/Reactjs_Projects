@@ -1,18 +1,18 @@
 import { ThemeProvider } from "styled-components";
 import { useState, useEffect } from "react";
 import { darkTheme, lightTheme } from "./utils/Themes.js";
-import Navbar from "./components/Navbar";
+import Navbar from "./Components/Navbar";
 import "./App.css";
 import { BrowserRouter as Router } from "react-router-dom";
-import HeroSection from "./components/HeroSection";
-import About from "./components/About";
-import Skills from "./components/Skills";
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import Experience from "./components/Experience";
-import Education from "./components/Education";
-import ProjectDetails from "./components/ProjectDetails";
+import HeroSection from "./Components/HeroSection";
+import About from "./Components/About";
+import Skills from "./Components/Skills";
+import Projects from "./Components/Projects";
+import Contact from "./Components/Contact";
+import Footer from "./Components/Footer";
+import Experience from "./Components/Experience";
+import Education from "./Components/Education";
+import ProjectDetails from "./Components/ProjectDetails";
 import styled from "styled-components";
 
 const Body = styled.div`

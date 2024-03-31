@@ -131,15 +131,6 @@ const ContactButton = styled.input`
   font-weight: 600;
 `;
 
-const Window = styled.div`
-  width: 500px;
-  height: 40px;
-  background-color: red;
-  position: absolute;
-  right: 0;
-  top: 2rem;
-`;
-
 const Contact = () => {
   //hooks
   const [open, setOpen] = React.useState(false);
@@ -149,10 +140,10 @@ const Contact = () => {
     e.preventDefault();
     emailjs
       .sendForm(
-        "service_dwthz4h",
-        "template_fjnlip8",
+        "service_tox7kqs",
+        "template_nv7k7mj",
         form.current,
-        "AKQOrL-_osl6fKuip"
+        "SybVGsYS52j2TfLbi"
       )
       .then(
         (result) => {
@@ -180,7 +171,13 @@ const Contact = () => {
           <ContactInputMessage placeholder="Message" rows="4" name="message" />
           <ContactButton type="submit" value="Send" />
         </ContactForm>
-        {open && <Window onClose={() => setOpen(false)} />}
+        <Snackbar
+          open={open}
+          autoHideDuration={6000}
+          onClose={() => setOpen(false)}
+          message="Email sent successfully!"
+          severity="success"
+        />
       </Wrapper>
     </Container>
   );

@@ -87,7 +87,7 @@ function Footer() {
   return (
     <FooterContainer>
       <FooterWrapper>
-        <Logo>Basani Rithvik reddy</Logo>
+        <Logo>Rishav Chanda</Logo>
         <Nav>
           <NavLink href="#about">About</NavLink>
           <NavLink href="#skills">Skills</NavLink>
@@ -109,9 +109,7 @@ function Footer() {
             <InstagramIcon />
           </SocialMediaIcon>
         </SocialMediaIcons>
-        <Copyright>
-          &copy; 2023 Basani Rithvik Reddy. All rights reserved.
-        </Copyright>
+        <Copyright>&copy; 2023 Rishav Chanda. All rights reserved.</Copyright>
       </FooterWrapper>
     </FooterContainer>
   );
