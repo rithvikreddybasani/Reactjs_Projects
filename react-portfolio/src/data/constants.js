@@ -5,7 +5,7 @@ export const Bio = {
     "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
   github: "https://github.com/rithvikreddybasani",
   resume:
-    "https://acrobat.adobe.com/id/urn:aaid:sc:AP:1f7d74c4-3f5b-4775-b2e5-344c272261f1",
+    "https://drive.google.com/file/d/1Lukv4G8gkDZ8G9LN-Af2WcAx6U6kMoAQ/view",
   linkedin: "linkedin.com/in/basani-rithvik-reddy",
   twitter: "https://twitter.com/RithvikBasani",
 };
@@ -70,6 +70,11 @@ export const skills = [
         image:
           "https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png",
       },
+      {
+        name: "TailwindCss",
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQMAgy_XeSr2CmOITAysaZtDxsVUSTSYtSM2EKE5ivhg&s",
+      },
     ],
   },
   {
@@ -83,6 +88,11 @@ export const skills = [
         name: "Express Js",
         image:
           "data:image/png;base64,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",
+      },
+      {
+        name: "Flask",
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyzOoUpccqAzrGw_OAJ6tRuRd4HRnBjLdaSJe9HfXVHA&s",
       },
       {
         name: "MongoDB",
@@ -100,7 +110,36 @@ export const skills = [
       },
     ],
   },
+  {
+    title: "Machine Learning",
+    skills: [
+      {
+        name: "Numpy",
+        image:
+          "data:image/png;base64,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",
+      },
+      {
+        name: "Matplotlib",
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4E8nWnVrHmfyWjTmcQgVgtg7Bz98VZZbEruChAyoAdW5mfGAL_ilpmK-HXhKp-hJHETI&usqp=CAU",
+      },
 
+      {
+        name: "Pandas",
+        image: "https://miro.medium.com/v2/resize:fit:1400/0*RWkQ0Fziw792xa0S",
+      },
+      {
+        name: "Seaborn",
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaY1irNhp9bMx3FIwTWEDq1UyipAU4Tj4Cp9ID3JPUeQ&s",
+      },
+      {
+        name: "OpenCV",
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp1C0MN6ejnJ4D0EteiFIhYfiG8eaNQTYsd_rm6jXqoQ&s",
+      },
+    ],
+  },
   {
     title: "Others",
     skills: [
@@ -142,7 +181,17 @@ export const skills = [
 export const experiences = [
   {
     id: 0,
-    img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/flipr.jpeg?alt=media&token=1d72532a-45eb-4c1a-a81a-c9bed9fec543",
+    img: "https://media.licdn.com/dms/image/D4E0BAQHSTmTlHN9g8A/company-logo_200_200/0/1704177465579/techplement_logo?e=2147483647&v=beta&t=ks_5zt8ffgd1ebe1cEFKnOVzFFHxVQt3dxSmJByRTQg",
+    role: "Frontend Developer",
+    company: "Techplement",
+    date: "Jun 2024 - Present",
+    desc: "Developing and maintained user interfaces for web applications using React, ensuring responsive and visually appealing designs.Collaborated with cross-functional teams to integrate RESTful APIs, enhancing application functionality and user experience.",
+    skills: ["Reactjs", "JavaScript", "CSS", "HTML5"],
+    doc: "",
+  },
+  {
+    id: 1,
+    img: "https://upload.wikimedia.org/wikipedia/en/thumb/e/ea/JNTU_Hyderabad_logo.png/220px-JNTU_Hyderabad_logo.png",
     role: "Placement Co-ordinator",
     company: "Jntuh",
     date: "Nov 2023 - Present",
@@ -184,29 +233,236 @@ export const education = [
 
 export const projects = [
   {
+    id: 2,
+    title: "ChatInsightX",
+    date: "Feb 2024",
+    description:
+      "The project takes input as text files containing chat data and processes this information to extract various metrics.It identifies the most active participants, peak chatting times, and days with the highest activity, providing clear understanding of user engagement and communication patterns.It employs various data visualization techniques such as bar plots and pie charts , pivot tables to represent the analysis results visually.",
+    image: "https://pbs.twimg.com/media/Dwnp4VbWoAUuSpf.jpg",
+    tags: ["Python", "pandas", "matplotlib", "seaborn", "streamlit"],
+    category: "machine learning",
+    github: "https://github.com/rithvikreddybasani/Chat_Analysis",
+    webapp: "https://chatanalysis-bwkya5kiupcfvmtvvriadr.streamlit.app",
+  },
+  {
+    id: 2,
+    title: "Face Mask Detection",
+    date: "Feb 2024",
+    description:
+      "This project demonstrates face mask detection using tensorflow and keras. This detects whether a person is wearing a mask or not. Used streamlit for deployment.Acheived an accuracy of 91%",
+    image: "https://www.qblocks.cloud/creators/images/face-mask-detection1.jpg",
+    tags: ["Python", "OpenCv", "tensorflow", "keras", "streamlit"],
+    category: "machine learning",
+    github: "https://github.com/rithvikreddybasani/Face_Mask_Detection",
+    webapp: "https://facemaskdetection-ik7urujequ5nxkeajzywbx.streamlit.app/",
+  },
+  {
+    id: 2,
+    title: "E-Commerce Website",
+    date: "Jan 2024",
+    description:
+      "I created a robust e-commerce website that effectively serves two types of users: admins and normal users. Admins have comprehensive control over the platform, including the ability to view and manage all users, update product listings, and assign admin roles to other users. The website offers a wide range of products, which can be seamlessly added to the user's cart. Additionally, the platform integrates a secure payment gateway, ensuring safe and smooth transactions. With a responsive design, the website delivers an intuitive and user-friendly experience across all devices. This project not only provides essential e-commerce functionalities but also emphasizes security and user management, making it a versatile and reliable platform for online shopping.",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPC7WwbqMcCG-bP2rxgCjAlgDAFwIU5aHCkQ&s",
+    tags: ["React Js", "Cloudinary", "ExpressJs", "Node JS", "tailwindCss"],
+    category: "web app",
+    github: "https://github.com/rithvikreddybasani/E_commerce",
+    webapp: "https://e-commerce-rithvikreddy.vercel.app",
+  },
+  {
+    id: 2,
+    title: "BlogVista",
+    date: "Feb 2024",
+    description:
+      "A Blog Website which is made with reactjs,redux,firebase.It has two features admin and users admin can we view all the users and posts while users can only see those.Comments features is also available.",
+    image:
+      "https://i0.wp.com/themes.svn.wordpress.org/bosa-blog-dark/1.0.4/screenshot.png",
+    tags: ["React Js", "API", "Axios", "Node JS", "firebase", "tailwindCss"],
+    category: "web app",
+    github: "https://github.com/rithvikreddybasani/mern-blog",
+    webapp: "https://rithvik-reddy-mern-blog-client.vercel.app/",
+  },
+  {
     id: 5,
+    title: "OptiPress",
+    date: "Mar 2024",
+    description:
+      "This is a combination of small projects such as text-editor,image editor,file compressor and a small snake game. The file compressor is made in Javascript using Hoffman coding(Tries).",
+    image:
+      "https://images.media.io/compress/images2023/home/compressor-pic3.png",
+    tags: ["Javascript", "Tries", "Hoffman Coding"],
+    category: "web app",
+    github:
+      "https://github.com/rithvikreddybasani/ALL_IN_ONE_EDITOR_AND_COMPRESSOR",
+    webapp: "https://rithvikreddybasani.github.io/OptiPress/",
+  },
+  {
+    id: 5,
+    title: "HandWritten Digit Classification",
+    date: "Mar 2024",
+    description:
+      "This project demonstrates a handwritten digit recognition system using keras for drawing digits and a trained Keras convolutional neural network (CNN) to recognize and classify the drawn digits. .",
+    image: "https://www.kaggle.com/competitions/3004/images/header",
+    tags: ["Python", "OpenCv", "tensorflow", "keras", "streamlit"],
+    category: "machine learning",
+    github:
+      "https://github.com/rithvikreddybasani/HandWritten_digit_Classification",
+    webapp:
+      "https://handwrittendigitclassification-qwlpsobes6mqhvnz4hweve.streamlit.app/",
+  },
+  {
+    id: 3,
+    title: "Resume_Screening",
+    date: "Feb 2024",
+    description:
+      "The Resume Role Identifier App is an intelligent application designed to automatically determine the professional role of a person based on their resume. By leveraging advanced machine learning techniques and data processing tools, this app categorizes resumes into specific job roles such as Python Developer, Java Developer, Data Scientist,Android developer and more.",
+    image:
+      "https://www.rchilli.com/hubfs/05How_employer_screen_CV1-1525861528452.jpg",
+    tags: ["tensorflow", "keras", "pandas", "matplotlib", "streamlit"],
+    category: "machine learning",
+    github: "https://github.com/rithvikreddybasani/resume_Screening",
+    webapp: "https://resumescreening-fnsv2cqbz9f2cj3rmmodyg.streamlit.app/",
+  },
+  {
+    id: 3,
+    title: "Chat_App",
+    date: "Feb 2024",
+    description:
+      "This is a chat-app made using SocketIO,reactjs, expressjs and cloudinary for storage.This can send messages instantly to the our friends.Sharing different documents,photos and videos is also possible.",
+    image:
+      "https://img.freepik.com/premium-vector/chat-app-logo-design-template-can-be-used-icon-chat-application-logo_605910-1724.jpg",
+    tags: ["SocketIo", "React Js", "API", "Axios", "Node JS", "tailwindCss"],
+    category: "web app",
+    github: "https://github.com/rithvikreddybasani/mern-chat-app",
+    webapp: "https://github.com/rithvikreddybasani/mern-chat-app",
+  },
+  {
+    id: 5,
+    title: "React_Video_Application",
+    date: "Dec 2023",
+    description:
+      "This is a video application made using reactjs.Here we can sees the videos present and can upload also.",
+    image:
+      "https://imagekit.io/blog/content/images/2024/03/React-Video-Player.png",
+    tags: ["React Js"],
+    category: "web app",
+    github:
+      "https://github.com/rithvikreddybasani/Reactjs_Projects/tree/main/Projects/social-media",
+    webapp: "https://github.com/rithvikreddybasani/mern-chat-app",
+  },
+  {
+    id: 5,
+    title: "Crypto-Exchange",
+    date: "Dec 2023",
+    description:
+      "Utilized ReactJS for building the user interface, taking advantage of its component-based architecture for modularity and reusability.Integrated Chakra UI, a popular React component library, for its sleek design, accessibility, and ease of customization. Used Celery and Redis for asynchronous tasks",
+    image:
+      "https://code-care.com/wp-content/uploads/2021/07/How-to-create-a-decentralized-cryptocurrency-exchange-1200x900.jpg",
+    tags: ["React Js"],
+    category: "web app",
+    github:
+      "https://github.com/rithvikreddybasani/Reactjs_Projects/blob/main/project-2",
+    webapp: "https://crypto-exchange-orpin.vercel.app/",
+  },
+  {
+    id: 2,
     title: "Todo Web App",
-    date: "Jun 2021",
+    date: "Jan 2024",
     description:
       " A Todo Web App made with React JS, Redux, and Material UI. It has a login page where users can log in with their Google account. It has a sidebar where users can see all the tasks and can create a new task. It has a calendar where users can see all the tasks on a particular date. It has a search bar where users can search for a particular task.",
     image:
-      "https://camo.githubusercontent.com/a328255ad96f861f57d25096d28018ab2656c689a1456b0d145764009bed2d1a/68747470733a2f2f666972656261736573746f726167652e676f6f676c65617069732e636f6d2f76302f622f746f646f2d6170702d63386331392e61707073706f742e636f6d2f6f2f53637265656e73686f74253230283938292e706e673f616c743d6d6564696126746f6b656e3d33643335646366322d626666322d343730382d393031632d343232383866383332386633",
+      "https://images.ctfassets.net/lzny33ho1g45/O6Ns6DttUzJym7rhGiD36/b1cc4e063288e5161b14edad3569c5cb/best-to-do-list-apps.jpg?w=1520&fm=jpg&q=30&fit=thumb&h=760",
     tags: ["React Js", "Local Storage", "AWS Auth", "Node JS"],
     category: "web app",
-    github: "https://github.com/rithvikreddybasani/Todo-Web-App",
-    webapp: "https://rishav-react-todo.netlify.app/",
+    github: "https://github.com/rithvikreddybasani/todo-app",
+    webapp:
+      "https://todo-app-client-l1fzehbfl-rithvikreddys-projects.vercel.app/",
   },
   {
-    id: 6,
-    title: "Breaking Bad",
-    date: "Jun 2021",
+    id: 2,
+    title: "Ecommerce-Api",
+    date: "Jan 2024",
     description:
-      "A simple react app that shows the characters of the famous TV series Breaking Bad. It uses the Breaking Bad API to fetch the data. It also has a search bar to search for a particular character.",
+      " This contains Ecommerce api.Several Options are present like shopping ,adding to cart, checking account balenced. Acheived Advanced search features using regular expression and many more.",
     image:
-      "https://camo.githubusercontent.com/cd07010cbeb90cb1b43a5d6162784326aef02210ef7d41a0f9ae043b3e392378/68747470733a2f2f666972656261736573746f726167652e676f6f676c65617069732e636f6d2f76302f622f746f646f2d6170702d63386331392e61707073706f742e636f6d2f6f2f53637265656e73686f7425323028313534292e706e673f616c743d6d6564696126746f6b656e3d65613439383630632d303435362d343333342d616435372d336239346663303333363263",
-    tags: ["React Js", "API", "Axios", "Node JS"],
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_xlhV-maUdLPfDkXH2qiAubc8hICFASW4Ni0pJBVa2Q&s",
+    tags: ["Local Storage", "Nodejs", "ExpressJs", "MongoDb"],
     category: "web app",
-    github: "https://github.com/rithvikreddy/Breaking-Bad",
-    webapp: "https://breaking-bad-webapp.netlify.app",
+    github:
+      "https://github.com/rithvikreddybasani/MERN-Projects/tree/main/E-commerce",
+    webapp:
+      "https://github.com/rithvikreddybasani/MERN-Projects/tree/main/E-commerce",
+  },
+  {
+    id: 2,
+    title: "Tic-Tac-Toe",
+    date: "Dec 2022",
+    description:
+      "This is a Tic-Tac-Toe game in c. Used the concept of 2-Dimensional array for storing results after every move.It also contain feature of playing with computer.Used rand function for computer moves",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDkTwSg80-fPb_ispMP_aIFCkfo3EV3yQ3Xg&s",
+    tags: ["C"],
+    category: "web apps",
+    github: "https://github.com/rithvikreddybasani/ProjectsinC",
+    webapp: "https://github.com/rithvikreddybasani/ProjectsinC",
+  },
+  {
+    id: 2,
+    title: "Diabetes Prediction",
+    date: "May 2024",
+    description:
+      "Diabetes prediction is done using python and some machine learning techniques.Used a Support vector machine for model , dataset from kaggle and utilised matplotlib for data analysis.Acheived an accuray of 86.6%",
+    image:
+      "https://media.dev.to/cdn-cgi/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fw8y1pf9mdhafhmimlk6s.jpeg",
+    tags: ["Python", "numpy", "pandas", "matplotlib", "sklearn"],
+    category: "machine learning",
+    github:
+      "https://github.com/rithvikreddybasani/Machine_learning_Projects/blob/main/Diabetes%20Prediction.ipynb",
+    webapp:
+      "https://multiplediseaseprediction-yypcwo3k95qsupcoxgkjfg.streamlit.app/",
+  },
+  {
+    id: 2,
+    title: "Heart Disease Prediction",
+    date: "May 2024",
+    description:
+      "Heart Disease prediction is done using python and some machine learning techniques.Used a Logistic Regression for model , dataset from kaggle and utilised matplotlib for data analysis.Acheived an accuracy of 97.7%",
+    image:
+      "https://www.clevelandheartlab.com/wp-content/uploads/2019/03/bigstock-Flat-line-alert-on-a-heart-mon-20436989-1350x1013.jpg",
+    tags: ["Python", "numpy", "pandas", "matplotlib", "sklearn"],
+    category: "machine learning",
+    github:
+      "https://github.com/rithvikreddybasani/Machine_learning_Projects/blob/main/Heart%20Disease%20Prediction.ipynb",
+    webapp:
+      "https://multiplediseaseprediction-yypcwo3k95qsupcoxgkjfg.streamlit.app/",
+  },
+  {
+    id: 2,
+    title: "Rock Vs Mine Prediction",
+    date: "May 2024",
+    description:
+      "Rock vs Mine prediction is done using python and some machine learning techniques.Used a Logistic Regression for model , dataset from kaggle and utilised matplotlib for data analysis.Acheived an accuracy of 86.6%",
+    image:
+      "https://miro.medium.com/v2/resize:fit:1400/1*7JqX0xhf8PSjuRiHujWLUQ.jpeg",
+    tags: ["Python", "numpy", "pandas", "matplotlib", "sklearn"],
+    category: "machine learning",
+    github:
+      "https://github.com/rithvikreddybasani/Machine_learning_Projects/blob/main/Rock%20vs%20Mine%20Prediction.ipynb",
+    webapp:
+      "https://github.com/rithvikreddybasani/Machine_learning_Projects/blob/main/Rock%20vs%20Mine%20Prediction.ipynb",
+  },
+  {
+    id: 2,
+    title: "Spam email Prediction",
+    date: "May 2024",
+    description:
+      "Spam email prediction is done using python and some machine learning techniques.Used a Random Forest Classifier for model , dataset from kaggle and utilised matplotlib for data analysis.Achieved an accuracy of 97.7%",
+    image:
+      "https://www.usnews.com/object/image/00000142-9258-d33c-abc6-ff5db39d001c/26159FE_DA_SpamFolder_021312.jpg?update-time=&size=responsive640",
+    tags: ["Python", "numpy", "pandas", "matplotlib", "sklearn"],
+    category: "machine learning",
+    github:
+      "https://github.com/rithvikreddybasani/Machine_learning_Projects/blob/main/Spam%20email%20prediction.ipynb",
+    webapp: "https://spamemailprediction-ijsohakzoxjkgfdmktfbsy.streamlit.app/",
   },
 ];
