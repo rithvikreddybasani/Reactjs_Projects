@@ -180,16 +180,6 @@ export const skills = [
 
 export const experiences = [
   {
-    id: 0,
-    img: "https://media.licdn.com/dms/image/D4E0BAQHSTmTlHN9g8A/company-logo_200_200/0/1704177465579/techplement_logo?e=2147483647&v=beta&t=ks_5zt8ffgd1ebe1cEFKnOVzFFHxVQt3dxSmJByRTQg",
-    role: "Frontend Developer",
-    company: "Techplement",
-    date: "Jun 2024 - Present",
-    desc: "Developing and maintained user interfaces for web applications using React, ensuring responsive and visually appealing designs.Collaborated with cross-functional teams to integrate RESTful APIs, enhancing application functionality and user experience.",
-    skills: ["Reactjs", "JavaScript", "CSS", "HTML5"],
-    doc: "",
-  },
-  {
     id: 1,
     img: "https://upload.wikimedia.org/wikipedia/en/thumb/e/ea/JNTU_Hyderabad_logo.png/220px-JNTU_Hyderabad_logo.png",
     role: "Placement Co-ordinator",
@@ -261,13 +251,20 @@ export const projects = [
     title: "E-Commerce Website",
     date: "Jan 2024",
     description:
-      "I created a robust e-commerce website that effectively serves two types of users: admins and normal users. Admins have comprehensive control over the platform, including the ability to view and manage all users, update product listings, and assign admin roles to other users. The website offers a wide range of products, which can be seamlessly added to the user's cart. Additionally, the platform integrates a secure payment gateway, ensuring safe and smooth transactions. With a responsive design, the website delivers an intuitive and user-friendly experience across all devices. This project not only provides essential e-commerce functionalities but also emphasizes security and user management, making it a versatile and reliable platform for online shopping.",
+      "I created a robust e-commerce website that effectively serves two types of users: admins and normal users. Admins have comprehensive control over the platform, including the ability to view and manage all users, update product listings, and assign admin roles to other users. The website offers a wide range of products, which can be seamlessly added to the user's cart. Additionally, the platform integrates a secure payment gateway, ensuring safe and smooth transactions. With a responsive design, the website delivers an intuitive and user-friendly experience across all devices. This project not only provides essential e-commerce functionalities but also emphasizes security and user management, making it a versatile and reliable platform for online shopping. It also includes payment integration where users can buy products using debit or credit cards",
     image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPC7WwbqMcCG-bP2rxgCjAlgDAFwIU5aHCkQ&s",
-    tags: ["React Js", "Cloudinary", "ExpressJs", "Node JS", "tailwindCss"],
+      "https://img.freepik.com/premium-psd/gevice-minimalist-electronic-ecommerce-hero-image_637394-659.jpg",
+    tags: [
+      "React Js",
+      "Cloudinary",
+      "ExpressJs",
+      "Node JS",
+      "tailwindCss",
+      "Stripe",
+    ],
     category: "web app",
-    github: "https://github.com/rithvikreddybasani/E_commerce",
-    webapp: "https://e-commerce-rithvikreddy.vercel.app",
+    github: "https://github.com/rithvikreddybasani/E-commerce-Up",
+    webapp: "https://e-commerce-up-rithvikreddy.vercel.app",
   },
   {
     id: 2,
