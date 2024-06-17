@@ -280,6 +280,26 @@ export const projects = [
     webapp: "https://rithvik-reddy-mern-blog-client.vercel.app/",
   },
   {
+    id: 2,
+    title: "Personal Assistant",
+    date: "Jun 2024",
+    description:
+      "A Personal Assitant called Elina.It has many functionalities like it can play any song of our choice , open different website for use like google,facebook,spotify,linkedin etc",
+    image:
+      "https://miro.medium.com/v2/resize:fit:735/1*pDN0qulYbAO6HLrWKAEgrQ.jpeg",
+    tags: [
+      "Python",
+      "Pygame",
+      "speech_recognization",
+      "pyttsx3",
+      "gTTS",
+      "requests",
+    ],
+    category: "machine learning",
+    github: "https://github.com/rithvikreddybasani/Personal_Assistant",
+    webapp: "https://github.com/rithvikreddybasani/Personal_Assistant",
+  },
+  {
     id: 5,
     title: "OptiPress",
     date: "Mar 2024",
