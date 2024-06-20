@@ -281,6 +281,18 @@ export const projects = [
   },
   {
     id: 2,
+    title: "QueryMatch",
+    date: "Jun 2024",
+    description:
+      "An app which takes two questions as inputs and predict whether both are similar or not.It checks the grammetical meaning of the sentence. Used Quora dataset which comprises of 4,00,000 and processed using Natural Language processing.Acheived an accuracy of 76.8%",
+    image: "https://i.imgur.com/uTAnDjy.jpeg",
+    tags: ["NLTK", "Pandas", "Scikit-learn", "Matplotlib", "FuzzyWizzy"],
+    category: "web app",
+    github: "https://github.com/rithvikreddybasani/QueryMatch",
+    webapp: "https://querymatch-vmryvzf68r9izh6zgia7hy.streamlit.app/",
+  },
+  {
+    id: 2,
     title: "Personal Assistant",
     date: "Jun 2024",
     description:
