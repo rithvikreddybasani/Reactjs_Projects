@@ -189,6 +189,16 @@ export const experiences = [
     skills: ["Leadership"],
     doc: "",
   },
+  {
+    id: 1,
+    img: "https://media.licdn.com/dms/image/D4E0BAQHSTmTlHN9g8A/company-logo_200_200/0/1704177465579/techplement_logo?e=2147483647&v=beta&t=ks_5zt8ffgd1ebe1cEFKnOVzFFHxVQt3dxSmJByRTQg",
+    role: "Frontend Developer",
+    company: "Techplement",
+    date: "May 2024 - Jun 2024",
+    desc: "As a frontend developer, you're focused on creating user interfaces and experiences using React and JavaScript. Using redux for state management and using API for user interaction.",
+    skills: ["Reactjs", "Redux", "JavaScript"],
+    doc: "",
+  },
 ];
 
 export const education = [
@@ -224,6 +234,50 @@ export const education = [
 export const projects = [
   {
     id: 2,
+    title: "GestureVoice",
+    date: "Jun 2024",
+    description:
+      "Developed a Sign language to speech conversion app utilizing a Convolutional neural network trained on 32,000 images, achieving 97.4% accuracy. Enhanced productivity through hyperparameter tuning and optimal model architecture, increasing efficiency by 15%. Developed a model using NLP methods to find similar words for the user from a text file consisting of 8000 sentences and over 2,00,000 words. Achieved 92% accuracy in similarity comparisons and implemented Autocorrection of predicted outputs using the spellchecker library. Implemented video capturing using OpenCV and integrated Google’s googletrans and gTTs libraries to accurately convert speech into over 120 languages with male and female voice over. Achieved an increase in accuracy by 20% , significantly enhancing accessibility and facilitating multilanguage communication.",
+    image:
+      "https://res.cloudinary.com/deqqhlv5n/image/upload/v1719460093/xfldkgmovhhncgafvgre.png",
+    tags: [
+      "OpenCV",
+      "CNN",
+      "Natural Language Processing",
+      "gTTs",
+      "googletrans",
+      "Pygame",
+      "keras",
+      "tensorflow",
+      "fuzzywuzzy",
+      "flask",
+    ],
+    category: "machine learning",
+    github: "https://github.com/rithvikreddybasani/GestureVoice",
+    webapp: "https://github.com/rithvikreddybasani/GestureVoice",
+  },
+  {
+    id: 2,
+    title: "E-Commerce Website",
+    date: "Jan 2024",
+    description:
+      "I created a robust e-commerce website that effectively serves two types of users: admins and normal users. Admins have comprehensive control over the platform, including the ability to view and manage all users, update product listings, and assign admin roles to other users. The website offers a wide range of products, which can be seamlessly added to the user's cart. Additionally, the platform integrates a secure payment gateway, ensuring safe and smooth transactions. With a responsive design, the website delivers an intuitive and user-friendly experience across all devices. This project not only provides essential e-commerce functionalities but also emphasizes security and user management, making it a versatile and reliable platform for online shopping. It also includes payment integration where users can buy products using debit or credit cards",
+    image:
+      "https://res.cloudinary.com/deqqhlv5n/image/upload/v1719409144/cozbxjofi8w6syorv5i6.png",
+    tags: [
+      "React Js",
+      "Cloudinary",
+      "ExpressJs",
+      "Node JS",
+      "tailwindCss",
+      "Stripe",
+    ],
+    category: "web app",
+    github: "https://github.com/rithvikreddybasani/E-commerce-Up",
+    webapp: "https://e-commerce-up-rithvikreddy.vercel.app",
+  },
+  {
+    id: 2,
     title: "ChatInsightX",
     date: "Feb 2024",
     description:
@@ -240,32 +294,14 @@ export const projects = [
     date: "Feb 2024",
     description:
       "This project demonstrates face mask detection using tensorflow and keras. This detects whether a person is wearing a mask or not. Used streamlit for deployment.Acheived an accuracy of 91%",
-    image: "https://www.qblocks.cloud/creators/images/face-mask-detection1.jpg",
+    image:
+      "https://res.cloudinary.com/deqqhlv5n/image/upload/v1719458569/qcxgnsrir5nqhfscnx48.png",
     tags: ["Python", "OpenCv", "tensorflow", "keras", "streamlit"],
     category: "machine learning",
     github: "https://github.com/rithvikreddybasani/Face_Mask_Detection",
     webapp: "https://facemaskdetection-ik7urujequ5nxkeajzywbx.streamlit.app/",
   },
-  {
-    id: 2,
-    title: "E-Commerce Website",
-    date: "Jan 2024",
-    description:
-      "I created a robust e-commerce website that effectively serves two types of users: admins and normal users. Admins have comprehensive control over the platform, including the ability to view and manage all users, update product listings, and assign admin roles to other users. The website offers a wide range of products, which can be seamlessly added to the user's cart. Additionally, the platform integrates a secure payment gateway, ensuring safe and smooth transactions. With a responsive design, the website delivers an intuitive and user-friendly experience across all devices. This project not only provides essential e-commerce functionalities but also emphasizes security and user management, making it a versatile and reliable platform for online shopping. It also includes payment integration where users can buy products using debit or credit cards",
-    image:
-      "https://img.freepik.com/premium-psd/gevice-minimalist-electronic-ecommerce-hero-image_637394-659.jpg",
-    tags: [
-      "React Js",
-      "Cloudinary",
-      "ExpressJs",
-      "Node JS",
-      "tailwindCss",
-      "Stripe",
-    ],
-    category: "web app",
-    github: "https://github.com/rithvikreddybasani/E-commerce-Up",
-    webapp: "https://e-commerce-up-rithvikreddy.vercel.app",
-  },
+
   {
     id: 2,
     title: "BlogVista",
@@ -273,7 +309,7 @@ export const projects = [
     description:
       "A Blog Website which is made with reactjs,redux,firebase.It has two features admin and users admin can we view all the users and posts while users can only see those.Comments features is also available.",
     image:
-      "https://i0.wp.com/themes.svn.wordpress.org/bosa-blog-dark/1.0.4/screenshot.png",
+      "https://res.cloudinary.com/deqqhlv5n/image/upload/v1719458154/qemf27c2yvau7jnvuncl.png",
     tags: ["React Js", "API", "Axios", "Node JS", "firebase", "tailwindCss"],
     category: "web app",
     github: "https://github.com/rithvikreddybasani/mern-blog",
@@ -287,7 +323,7 @@ export const projects = [
       "An app which takes two questions as inputs and predict whether both are similar or not.It checks the grammetical meaning of the sentence. Used Quora dataset which comprises of 4,00,000 and processed using Natural Language processing.Acheived an accuracy of 76.8%",
     image: "https://i.imgur.com/uTAnDjy.jpeg",
     tags: ["NLTK", "Pandas", "Scikit-learn", "Matplotlib", "FuzzyWizzy"],
-    category: "web app",
+    category: "machine learning",
     github: "https://github.com/rithvikreddybasani/QueryMatch",
     webapp: "https://querymatch-vmryvzf68r9izh6zgia7hy.streamlit.app/",
   },
@@ -318,7 +354,7 @@ export const projects = [
     description:
       "This is a combination of small projects such as text-editor,image editor,file compressor and a small snake game. The file compressor is made in Javascript using Hoffman coding(Tries).",
     image:
-      "https://images.media.io/compress/images2023/home/compressor-pic3.png",
+      "https://res.cloudinary.com/deqqhlv5n/image/upload/v1719458957/grd95kpgmssibzhjcyzn.png",
     tags: ["Javascript", "Tries", "Hoffman Coding"],
     category: "web app",
     github:
