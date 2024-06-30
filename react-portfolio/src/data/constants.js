@@ -261,8 +261,21 @@ export const projects = [
     webapp: "https://github.com/rithvikreddybasani/GestureVoice",
   },
   {
+    id: 3,
+    title: "QuickConnect",
+    date: "Feb 2024",
+    description:
+      "This is a chat-app made using SocketIO,reactjs, expressjs and cloudinary for storage.Here users can send messages instantly with other users.Users can send text messages,videos,images,audio etc. Additionally users can also share their location to. CRUD operations like updation,deletion of accound is possible.Obtained responsiveness using tailwindCSS.Users can also see their present location and get the link for that.Different backgrounds is possible.",
+    image:
+      "https://res.cloudinary.com/deqqhlv5n/image/upload/v1719720238/vkl9t42mksuibsgpqvby.png",
+    tags: ["SocketIo", "React Js", "Axios", "Node JS", "tailwindCss"],
+    category: "web app",
+    github: "https://github.com/rithvikreddybasani/Advanced_Real_Time_Chat_app",
+    webapp: "https://github.com/rithvikreddybasani/Advanced_Real_Time_Chat_app",
+  },
+  {
     id: 2,
-    title: "E-Commerce Website",
+    title: "E-Commerce",
     date: "Jan 2024",
     description:
       "I created a robust e-commerce website that effectively serves two types of users: admins and normal users. Admins have comprehensive control over the platform, including the ability to view and manage all users, update product listings, and assign admin roles to other users. The website offers a wide range of products, which can be seamlessly added to the user's cart. Additionally, the platform integrates a secure payment gateway, ensuring safe and smooth transactions. With a responsive design, the website delivers an intuitive and user-friendly experience across all devices. This project not only provides essential e-commerce functionalities but also emphasizes security and user management, making it a versatile and reliable platform for online shopping. It also includes payment integration where users can buy products using debit or credit cards",
@@ -392,19 +405,7 @@ export const projects = [
     github: "https://github.com/rithvikreddybasani/resume_Screening",
     webapp: "https://resumescreening-fnsv2cqbz9f2cj3rmmodyg.streamlit.app/",
   },
-  {
-    id: 3,
-    title: "Chat_App",
-    date: "Feb 2024",
-    description:
-      "This is a chat-app made using SocketIO,reactjs, expressjs and cloudinary for storage.This can send messages instantly to the our friends.Sharing different documents,photos and videos is also possible.",
-    image:
-      "https://img.freepik.com/premium-vector/chat-app-logo-design-template-can-be-used-icon-chat-application-logo_605910-1724.jpg",
-    tags: ["SocketIo", "React Js", "API", "Axios", "Node JS", "tailwindCss"],
-    category: "web app",
-    github: "https://github.com/rithvikreddybasani/mern-chat-app",
-    webapp: "https://github.com/rithvikreddybasani/mern-chat-app",
-  },
+
   {
     id: 5,
     title: "React_Video_Application",
